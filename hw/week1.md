@@ -46,6 +46,6 @@ This homework has two parts; first, complete the exercises we began in class usi
 
 - **Assignment: Get extra help by going to the Hybrid Lab during staffed hours (I believe 9am-10pm weekdays and 12pm-7pm on weekends) and asking the coaches for help!**
 
-- **Assignment: Bring your computer to class on Wednesday, September 14!**
+- **Assignment: Bring your computer to class on Wednesday, January 25!**
 
 Please email us at [J.D.](mailto:jzamfirescupereira@cca.edu) or [Caroline](mailto:caroline.crandall@cca.edu) if you're stuck, aren't sure how to move forward, or just want to say hi! (And if you're stuck on Rudy, include the URL link to the puzzle you're stuck on!)
