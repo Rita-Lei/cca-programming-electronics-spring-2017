@@ -14,7 +14,7 @@ This homework has two parts; first, complete the exercises we began in class usi
   - **Assignment: Use a `while` or `for` loop for puzzles 7 and 8.**
   - **Assignment: Publish your code on the web, and [send me](mailto:jzamfirescupereira@cca.edu) the link. For this class, use [GitHub to publish your work](/zamfi/github-guide); your solution to *each puzzle should be in its own file*, named `puzzle-1.js`, `puzzle-1.js`, etc.**
   
-  I strongly recommend you review what we [worked on in class today](../README.md). You may also find the following **advice** extraordinarily helpful; **I recommend reading it carefully**. 
+  I strongly recommend you review what we [worked on in class today](../README.md#week-1-wednesday-january-18-2017). You may also find the following **advice** extraordinarily helpful; **I recommend reading it carefully**. 
   
   - Programming is the act of recording a process. In our first class, we (you!) executed this recording; in general, however, a computer will execute this process for you. There are two parts to programming: figuring out the process, and coding that process. The act of figuring out the process is the act of combining the primitive components of the environment into the behavior you want. For today's puzzles, that means combining the **vocabulary** of function calls: `up`, `down`, `left`, `right`, `getColor`, `setColor` together with the **grammar** of syntax: variables, `while` loops, `if` statements, blocks, and `function` definitions. You can extend the **vocabulary** by defining your own functions; the **grammar** is fixed by the language.
 

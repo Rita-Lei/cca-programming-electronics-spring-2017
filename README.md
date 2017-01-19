@@ -1,10 +1,10 @@
-# CCA Programming & Electronics, Fall 2016, Wednesday section
+# CCA Programming & Electronics, Spring 2017
 
 This course repository contains homework assignments, useful guides, and code for "Programming & Electronics" at CCA, Spring 2017.
 
 Also included in this repository is the official [course syllabus](syllabus.pdf).
 
-### Week 1: Wednesday, September 7, 2016
+### Week 1: Wednesday, January 18, 2017
 
 Lecture:
 - Introductions
@@ -20,7 +20,7 @@ Hands-on activities:
 
 In today's class, we explored the four building blocks of code: functions, variables (memory), `if` statements (conditions), and `while` loops.
 
-*Functions*
+**Functions**
 
 A function is like a recipe. It describes what sequence of actions to take in order to get some desired result. Functions can be built-in, like `down`, `up`, `left`, and `right` in the Rudy the Red Dot puzzle game.
 
@@ -45,7 +45,7 @@ Here's the flowchart for the function `downThreeTimes`:
 
 ![downThreeTimes](img/downThreeTimes.png)
 
-*Memory and Variables*
+**Memory and Variables**
 
 Memory is stored in the equivalent of a table. It might look something like this:
 
@@ -77,11 +77,11 @@ Or, equivalently, in flow-chart:
 
 ![saving in memory](img/getColor-setColor.png)
 
-The red arrows indicate data going to or from memory, using the given variable name. The `getColor` function, for example, gives us back a "color" that we are storing the the variable named `c`. Then, later, the `setColor` function uses `c` as its color parameter.
+The red arrows indicate data going to or from memory, using the given variable name. The `getColor` function, for example, gives us back a "color" that we are storing in the variable named `c`. Then, later, the `setColor` function uses `c` as its color parameter.
 
 Rememeber that setting a variable to the result of some function doesn't set up any kind of pemanent relationship: that function is run once, and the value you get back at that very moment is then saved in memory.
 
-*`if` statements*
+**`if` statements**
 
 `if` statements let you control the flow of your code so that it doesn't just sequentially run every line of code you have. The typical `if` statement might look something like this:
 
@@ -99,7 +99,7 @@ Equivalently, in flow-chart:
 
 The `else` branch is optional. The curly-brace characters, `{}`, enclose all the lines of code that are part of the **YES** or **NO** branches of the `if`.
 
-*`while` loops*
+**`while` loops**
 
 `while` loops are like `if` statements, but repeated. In other words, if the condition is true, not only is the body run, but the loop repeats itself and checks the condition again. A typical `while` loop might look something like this:
 
