@@ -11,7 +11,7 @@ As a reminder, **please email us if you get stuck!** We are on email more than i
 
    ![smiley](img/hw2/smiley.png)
 
-2. Modify your smiley-face sketch above so that (a) the [background](http://p5js.org/reference/#/p5/background) gets cleared each frame before drawing the face, and (b) the happiness of the smile tracks `mouseX` -- sad on the left, happy on the right -- like in this anigif:
+2. Modify your smiley-face sketch from #1 so that (a) the [background](http://p5js.org/reference/#/p5/background) gets cleared each frame before drawing the face, and (b) the happiness of the smile tracks `mouseX` -- sad on the left, happy on the right -- like in this anigif:
    
    ![smiley-video](img/hw2/smiley-anigif.gif)
 
@@ -19,11 +19,11 @@ As a reminder, **please email us if you get stuck!** We are on email more than i
   
    ![single-circle](img/hw2/single-circle.gif)
 
-4. Modify your single circle code so that the circle bounces at the **right** edge of the canvas and reverses direction. *You may need an extra variable to keep track of the direction of the circle's motion!*
+4. Modify your single circle code from #3 above so that the circle bounces at the **right** edge of the canvas and reverses direction. *You may need an extra variable to keep track of the direction of the circle's motion!*
   
 5. Make the circle also bounce on the **left** side of the canvas.
 
-6. **Challenge**: Write a [`mousePressed()`](http://p5js.org/reference/#/p5/mousePressed) function that immediately moves the circle to the location of the mouse click. (Just as p5.js automatically runs `setup()` when you start your sketch, and runs `draw()` for every frame, it also runs `mousePressed()` whenever the user clicks the mouse.)
+6. **Challenge**: Add a [`mousePressed()`](http://p5js.org/reference/#/p5/mousePressed) function that immediately moves the circle to the location of the mouse click. (Just as p5.js automatically runs `setup()` when you start your sketch, and runs `draw()` for every frame, it also runs `mousePressed()` whenever the user clicks the mouse.)
 
    Your sketch may look something like this:
    
