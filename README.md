@@ -83,6 +83,8 @@ Make sure you understand the principles behind [random-dots.js](class-code/rando
 
 [Homework for Week 2](hw/week2.md)
 
+<!-- 
+
 ### Week 3: Wednesday, February 1, 2017
 
 Today, we'll practice loops:
@@ -143,5 +145,6 @@ for (var i = 20; i <= 480; i = i + 10) {
 
 You'll explore a few more similar puzzles in the homework!
 
-[Homework for Week 3](hw/week3.md) -->
+[Homework for Week 3](hw/week3.md)
 
+-->
