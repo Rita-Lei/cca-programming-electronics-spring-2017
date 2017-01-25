@@ -5,7 +5,7 @@ Complete the exercises below on variables and animation and submit them in your 
 As a reminder, **please email us if you get stuck!** We are on email more than is probably healthy, and we are happy to answer questions. Also please make use of the help available to you at CCA: You can get hands-on, in-person help by stopping by the Hybrid Lab and speaking with a lab monitor, or by making an appointment with one of the [Software or Math/Science coaches at the Learning Resources Center](https://www.cca.edu/students/resources/appointments).
 
 
-#### Programming Practice 
+#### Programming Practice (due Sunday)
 
 1. Complete your moving smiley face. To be specific, draw a smiley face that follows the mouse -- your sketch should do this by drawing the face at a location determined using `mouseX` and `mouseY` variables like we did in class. Your sketch should produce something that looks like this:
 
@@ -28,5 +28,17 @@ As a reminder, **please email us if you get stuck!** We are on email more than i
    Your sketch may look something like this:
    
    ![bouncing-circle](img/hw2/bouncing-circle.gif)
-   
-   
+
+
+#### Tutorial (due Tuesday)
+
+Watch Daniel Shiffman's video tutorials about [`while` and `for` loops](https://www.youtube.com/watch?v=cnRD9o6odjk) and [nested loops](https://www.youtube.com/watch?v=1c1_TMdf8b8).
+
+Then, answer the following questions in a 'questions.md' file in your repository for week 2's homework:
+
+1. What is the difference between a `for` loop and a `while` loop?
+
+1. What are the four parts of a `for` loop? What do they do?
+
+2. What does "nested" mean in the context of nested loops?
+
