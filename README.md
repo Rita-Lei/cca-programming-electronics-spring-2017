@@ -18,7 +18,9 @@ Hands-on activities:
 
 #### Building Blocks of Code
 
-In class, we discussed the four basic building blocks of code: functions, variables, conditions, and loops. [Here are some notes.](building-blocks.md)
+In class, we discussed the four basic building blocks of code: functions, variables, conditions, and loops. 
+
+[Here are some notes.](building-blocks.md)
 
 #### Inspiration
 
