@@ -77,7 +77,11 @@ Together, we'll experiment with a few sketches to practice variables:
 - [Nice Little House](http://p5js.zamfi.net/full/HJRrZprPe)
   - Working with a partner, modify your house so that it is drawn at the location of your mouse, as you move the mouse. Use the `mouseX` and `mouseY` variables available to you in p5.js.
 
-Then we'll practice loops:
+[Homework for Week 2](hw/week2.md)
+
+### Week 3: Wednesday, February 1, 2017
+
+Today, we'll practice loops:
 
 - Together, we'll make vertical lines:
   ![vertical lines](img/vertical-lines.png)
@@ -135,5 +139,5 @@ for (var i = 20; i <= 480; i = i + 10) {
 
 You'll explore a few more similar puzzles in the homework!
 
-[Homework for Week 2](hw/week2.md)
+[Homework for Week 3](hw/week3.md) -->
 
