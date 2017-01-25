@@ -79,11 +79,11 @@ Together, we'll experiment with a few sketches to practice variables:
 
 Then we'll practice loops:
 
-- [Vertical Stripes](http://p5js.zamfi.net/jd/full/Bk4ZHpBDx)
+- Together, we'll make vertical lines:
+  ![vertical lines](img/vertical-lines.png)
 
-Use what we discussed to reproduce this sketch:
-
-![horizontal lines](img/horizontal-lines.png)
+- Then, with a partner, you'll make horizontal lines:
+  ![horizontal lines](img/horizontal-lines.png)
 
 Here's one way of working with loops, and figuring out how to turn a pattern into code:
 
