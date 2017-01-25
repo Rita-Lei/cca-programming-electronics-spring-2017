@@ -72,10 +72,14 @@ Together, we'll experiment with a few sketches to practice variables:
   - Working with a partner, modify this sketch to give each ellipse:
      1. A random size.
      2. A random color. (Use HSB for nicer colors!)
+  - **Here's the code we came up with in class: [random-dots.js](class-code/random-dots.js)**
 - [Color and HSB](http://p5js.zamfi.net/full/ByanCnHPx)
   - Working with a partner, modify this sketch so that it continuously changes color instead of stopping at red.
+  - **Here's the code we came up with in class: [cycling-hue.js](class-code/cycling-hue.js)**
 - [Nice Little House](http://p5js.zamfi.net/full/HJRrZprPe)
   - Working with a partner, modify your house so that it is drawn at the location of your mouse, as you move the mouse. Use the `mouseX` and `mouseY` variables available to you in p5.js.
+
+Make sure you understand the principles behind [random-dots.js](class-code/random-dots.js) and [cycling-hue.js](class-code/cycling-hue.js), two of the sketches we worked on in class, before you move on to the homework!
 
 [Homework for Week 2](hw/week2.md)
 

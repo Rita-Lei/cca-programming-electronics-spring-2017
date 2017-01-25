@@ -11,20 +11,20 @@ As a reminder, **please email us if you get stuck!** We are on email more than i
 
 1. A cone of lines. (Follow the method we used in class -- start by finding the pattern in the coordinates of the first few lines!)
    
-   ![cone-of-lines](img/hw2/cone-of-lines.png)
+   ![cone-of-lines](img/hw3/cone-of-lines.png)
 
 2. Concentric circles. Remember that drawn shapes are filled by default -- look into the `noFill` command in the [P5js reference](http://p5js.org/reference).
    
-   ![concentric-circles](img/hw2/concentric-circles.png)
+   ![concentric-circles](img/hw3/concentric-circles.png)
 
 3. Doubles. It's ok if the lines draw off the screen.
   
-   ![doubles](img/hw2/doubles.png)
+   ![doubles](img/hw3/doubles.png)
 
 4. Diamond. You might need more than one loop, like the example we did together in class.
   
-   ![diamond](img/hw2/diamond.png)
+   ![diamond](img/hw3/diamond.png)
 
 5. Art Deco. You'll need a nested loop for this one. One way to think about it: first write a single loop that draws concentric rectangles around a center point. Then, figure out the pattern in the center points from one rectangle set to the next. Then, write your "outer" loop so that the center points follow the pattern you found.
    
-   ![artdeco](img/hw2/artdeco.png)
+   ![artdeco](img/hw3/artdeco.png)
