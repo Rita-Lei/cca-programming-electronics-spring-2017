@@ -11,7 +11,7 @@ As a reminder, **please email us if you get stuck!** We are on email more than i
 
    ![smiley](img/hw2/smiley.png)
 
-2. Modify your smiley-face sketch from #1 so that (a) the [background](http://p5js.org/reference/#/p5/background) gets cleared each frame before drawing the face, and (b) the happiness of the smile tracks `mouseX` -- sad on the left, happy on the right -- like in this anigif:
+2. Modify your smiley-face sketch from #1 so that (a) the [background](http://p5js.org/reference/#/p5/background) gets cleared each frame before drawing the face, and (b) the happiness of the smile tracks `mouseX` -- sad on the left, happy on the right -- like in the anigif below. You don't need to use a curve for the smile (two or three lines should be enough!) but if you want to try it, look up [arc](http://p5js.org/reference/#/p5/arc) and [bezier](http://p5js.org/reference/#/p5/bezier) in the reference.
    
    ![smiley-video](img/hw2/smiley-anigif.gif)
 
