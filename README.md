@@ -78,8 +78,9 @@ Together, we'll experiment with a few sketches to practice variables:
   - **Here's the code we came up with in class: [cycling-hue.js](class-code/cycling-hue.js)**
 - [Nice Little House](http://p5js.zamfi.net/full/HJRrZprPe)
   - Working with a partner, modify your house so that it is drawn at the location of your mouse, as you move the mouse. Use the `mouseX` and `mouseY` variables available to you in p5.js.
+  - **Here's one possible set of code, based in part on ideas we discussed in class: [moving-house.js](class-code/moving-house.js)**
 
-Make sure you understand the principles behind [random-dots.js](class-code/random-dots.js) and [cycling-hue.js](class-code/cycling-hue.js), two of the sketches we worked on in class, before you move on to the homework!
+Make sure you understand the principles behind [random-dots.js](class-code/random-dots.js) and [cycling-hue.js](class-code/cycling-hue.js), two of the sketches we worked on in class, before you move on to the homework! Also take a look at [moving-house.js](class-code/moving-house.js), one approach to moving the house with the mouse -- it could be useful inspiration for your homework.
 
 [Homework for Week 2](hw/week2.md)
 
