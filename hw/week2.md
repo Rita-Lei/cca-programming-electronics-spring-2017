@@ -1,4 +1,4 @@
-### Homework 2 (due Sunday, January 29, 2016)
+### Homework 2 (due Sunday, January 29, 2017)
 
 Complete the exercises below on variables and animation and submit them in your [homework repository](../github-guide.md) (label these sketches `sketch-1.js` etc.).
 
