@@ -104,7 +104,11 @@ Today, we'll practice loops:
     
     ![rainbow lines](img/rainbow-lines.gif)
 
-5.  **Challenge:** Using a technique called the "exponential moving average", we can create a smooth easing animation like this:
+5.  Now try this grid of circles; you'll need **nested loops** for this one!
+    
+    ![circle grid](img/circle-grid.gif)
+
+6.  **Challenge:** Using a technique called the "exponential moving average", we can create a smooth easing animation like this:
     
     ![easing position](img/easing-position.gif)
     
