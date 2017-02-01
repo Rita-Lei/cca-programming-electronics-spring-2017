@@ -84,17 +84,55 @@ Make sure you understand the principles behind [random-dots.js](class-code/rando
 
 [Homework for Week 2](hw/week2.md)
 
-<!-- 
-
 ### Week 3: Wednesday, February 1, 2017
 
 Today, we'll practice loops:
 
-- Together, we'll make vertical lines:
-  ![vertical lines](img/vertical-lines.png)
+1. Together, we'll make vertical lines:
+   
+   ![vertical lines](img/vertical-lines.png)
 
-- Then, with a partner, you'll make horizontal lines:
-  ![horizontal lines](img/horizontal-lines.png)
+2. Then, with a partner, you'll make horizontal lines:
+   
+   ![horizontal lines](img/horizontal-lines.png)
+
+3. Try an animation with your partner too:
+   
+   ![animated lines](img/animated-lines.gif)
+
+4. Try this animation too:
+   
+   ![rainbow lines](img/rainbow-lines.gif)
+
+5. **Challenge** Using a technique called the "exponential moving average", we can create a smooth easing animation like this:
+   
+   ![easing position](img/easing-position.gif)
+   
+   The technique works by one variable to store intermediate values for another variable. For example, in the sketch above, the *x-* and *y-* coordinates of the circle are stored in variables `x` and `y`, which are **eased** to the target values given by `mouseX` and `mouseY`.
+   
+   "Exponential moving average" is a fancy way of saying: first, pick a fixed **rate** at which the easing occurs for a variable to its target. That rate controls how much impact the target has on the value each frame. For exampe, if the rate is 10%, then the new value each frame is 10% the target value and 90% the old value of the variable. Here's some sample code:
+   
+   ```javascript
+   function setup() {
+     createCanvas(400, 400);
+   }
+   
+   var rate = 0.1;
+   var x = 0;
+   var target = 100;
+   
+   function draw() {
+     ellipse(x, 100, 15, 15);
+     x = target*rate + x*(1-rate); // rate is 0.1, or 10% -- (1-rate) is 0.9, or 90%
+   }
+   ```
+   
+   Each frame, x gets 10% closer to its target.
+   
+   Modify this code to create a circle that follows the mouse as in the anigif above.
+
+
+#### Working with Loops
 
 Here's one way of working with loops, and figuring out how to turn a pattern into code:
 
@@ -147,5 +185,3 @@ for (var i = 20; i <= 480; i = i + 10) {
 You'll explore a few more similar puzzles in the homework!
 
 [Homework for Week 3](hw/week3.md)
-
--->
