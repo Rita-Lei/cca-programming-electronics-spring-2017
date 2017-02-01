@@ -106,7 +106,7 @@ Today, we'll practice loops:
 
 5.  Now try this grid of circles; you'll need **nested loops** for this one!
     
-    ![circle grid](img/circle-grid.gif)
+    ![circle grid](img/circle-grid.png)
 
 6.  **Challenge:** Using a technique called the "exponential moving average", we can create a smooth easing animation like this:
     
