@@ -21,7 +21,7 @@ As a reminder, **please email us if you get stuck!** We are on email more than i
   
    ![doubles](img/hw3/doubles.png)
 
-4. Diamond. You might need more than one loop, like the example we did together in class.
+4. Diamond. You might need more than one loop.
   
    ![diamond](img/hw3/diamond.png)
 
