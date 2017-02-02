@@ -25,6 +25,6 @@ As a reminder, **please email us if you get stuck!** We are on email more than i
   
    ![diamond](img/hw3/diamond.png)
 
-5. Art Deco. You'll need a nested loop for this one. One way to think about it: first write a single loop that draws concentric rectangles around a center point. Then, figure out the pattern in the center points from one rectangle set to the next. Then, write your "outer" loop so that the center points follow the pattern you found.
+5. **Optional Challenge:** Art Deco. You'll need a nested loop for this one. One way to think about it: first write a single loop that draws concentric rectangles around a center point. Then, figure out the pattern in the center points from one rectangle set to the next. Then, write your "outer" loop so that the center points follow the pattern you found.
    
    ![artdeco](img/hw3/artdeco.png)
