@@ -189,3 +189,73 @@ for (var i = 20; i <= 480; i = i + 10) {
 You'll explore a few more similar puzzles in the homework!
 
 [Homework for Week 3](hw/week3.md)
+
+
+### Week 4: Wednesday, February 8, 2017
+
+Today, we'll review loops and get some more practice building them.
+
+First, homework review. Working with a partner, go over your solutions to [homework 3](hw/week3.md).
+
+Then, with a partner, try to recreate as many of the following sketches as you can:
+
+1. Circles in a diagonal line. Use a while loop to draw the balls in sequence. What do you know about the *x* and *y* coordinates of each ball? (Spoiler: They're the same!)
+   
+   ![ball-diagonal](img/wk4/ball-diagonal.png)
+
+2. Circles in a grid. You will likely need a while loop inside another while loop!
+   
+   ![ball-grid](img/wk4/ball-grid.png)
+
+3. Colored circles in a grid, random version. Check out the `colorMode` function, and HSB, in the [P5.js reference](http://p5js.org/reference).
+   
+   ![ball-grid-randoms](img/wk4/ball-grid-randoms.png)
+
+4. Colored circles in a grid, sequential version. Check out the `colorMode` function, and HSB, in the [P5.js reference](http://p5js.org/reference). Note that the colors shift from left to right *and* from top to bottom!
+
+   ![ball-grid-rainbows](img/wk4/ball-grid-rainbows.png)
+
+5. Circles in an triangle.
+
+   ![ball-triangle](img/wk4/ball-triangle.png)
+   
+6. Circles in an hourglass.
+
+   ![ball-hourglass](img/wk4/ball-hourglass.png)
+
+7. The grid.
+   
+   ![grid](img/wk4/grid.png)
+   
+8. Diagonal lines.
+
+   ![diagonal-lines](img/wk4/diagonal-lines.png)
+
+9. Diagonal lines, interrupted.
+
+   ![big-p](img/wk4/big-p.png)
+
+10. Random bars.
+
+   ![random-bars](img/wk4/random-bars.png)
+
+11. Random bars, animated.
+
+   [![random-bars-animated](img/wk4/random-bars-animated.png)](http://youtu.be/EA9MqlY56LM)
+
+12. Animated bars, mouse-sensitive. You'll need the P5.js-defined variables `mouseX` and `mouseY` -- see the [P5.js reference](http://p5js.org/reference).
+
+   [![random-bars-mouse](img/wk4/random-bars-mouse.png)](http://youtu.be/3OAKqXS5Lkw)
+
+13. Bouncing balls, just two.
+
+   [![bouncing-balls](img/wk4/bouncing-balls.png)](http://youtu.be/7sfC4-4VoM4)
+
+14. **Challenge:** Bouncing balls, more added by clicking. You may need to use an `Array` or two.
+
+   [![bouncing-balls-with-clicks](img/wk4/bouncing-balls-with-clicks.png)](http://youtu.be/Tnkhya3Tqu0)
+
+15. **Challenge:** Fireworks! They should track the mouse and appear on clicks.
+
+   [![fireworks](img/wk4/fireworks.png)](http://youtu.be/yNTUEe9cof8)
+   
