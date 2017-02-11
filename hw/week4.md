@@ -1,6 +1,6 @@
 ### Homework 4 (due Wednesday, February 15, 2017)
 
-1. Complete the in-class exericses from Wednesday's class and submit them in your [homework repository](../github-guide.md) (label these sketches `sketch-1.js` etc.).
+1. Complete the [in-class exericses from Wednesday's class](../README.md#week-4-wednesday-february-8-2017) and submit them in your [homework repository](http://github.com/zamfi/github-guide) (label these sketches `sketch-1.js` etc.).
 
 2. Complete this [code tracing exercise](https://github.com/zamfi/cca-programming-electronics-spring-2017/blob/master/hw/trace-exercise.pdf?raw=true), as though you are the computer, following the following instructions:
    1. For each new variable, add a new entry to the Computer Memory table.
