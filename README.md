@@ -259,3 +259,4 @@ Then, with a partner, try to recreate as many of the following sketches as you c
 
    [![fireworks](img/wk4/fireworks.png)](http://youtu.be/yNTUEe9cof8)
    
+[Homework for Week 4](hw/week4.md)
