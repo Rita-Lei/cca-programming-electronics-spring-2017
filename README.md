@@ -251,11 +251,11 @@ Then, with a partner, try to recreate as many of the following sketches as you c
 
    [![bouncing-balls](img/wk4/bouncing-balls.png)](http://youtu.be/7sfC4-4VoM4)
 
-14. **Challenge:** Bouncing balls, more added by clicking. You may need to use an `Array` or two.
+14. **Optional Challenge:** Bouncing balls, more added by clicking. You may need to use an `Array` or two.
 
    [![bouncing-balls-with-clicks](img/wk4/bouncing-balls-with-clicks.png)](http://youtu.be/Tnkhya3Tqu0)
 
-15. **Challenge:** Fireworks! They should track the mouse and appear on clicks.
+15. **Optional Challenge:** Fireworks! They should track the mouse and appear on clicks.
 
    [![fireworks](img/wk4/fireworks.png)](http://youtu.be/yNTUEe9cof8)
    

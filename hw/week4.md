@@ -1,4 +1,4 @@
-### Homework 3 (due Wednesday, February 15, 2017)
+### Homework 4 (due Wednesday, February 15, 2017)
 
 1. Complete the in-class exericses from Wednesday's class and submit them in your [homework repository](../github-guide.md) (label these sketches `sketch-1.js` etc.).
 
