@@ -2,11 +2,11 @@
 
 Homework this week is to reproduce some of Sol LeWitt's pieces, and then complete the assignments from last week (if you haven't already).
 
-1. Pick 3 of Sol LeWitt's Wall Drawings from [this retrospective at MASS MoCA](http://massmoca.org/sol-lewitt/) and reproduce them using code, in p5.js. Label these in your [homework repository](http://github.com/zamfi/github-guide) according to their title in the restrospective, e.g., `lewitt-368.js`. Feel free to use the image as your guide or LeWitt's instructions directly. (More info about [Sol LeWitt's instructions here](http://risdmuseum.org/manual/45_variations_of_a_drawing_sol_lewitt_and_his_written_instructions).) 
+1. Pick 3 of Sol LeWitt's Wall Drawings from [this retrospective at MASS MoCA](http://massmoca.org/sol-lewitt/) and reproduce them using code, in p5.js. Label these in your [homework repository](http://github.com/zamfi/github-guide) according to their title in the restrospective, e.g., `lewitt-368.js`. Feel free to use the image as your guide or LeWitt's instructions directly. More info about [Sol LeWitt's instructions here](http://risdmuseum.org/manual/45_variations_of_a_drawing_sol_lewitt_and_his_written_instructions).
    
-   Get creative! Use whatever code you're comfortable with. (Bonus points for doing more than 3, or for animating them in some way.)
+   Get creative! Use whatever code you're comfortable with. Bonus points for doing more than 3, or for animating them in some way.
    
-   You may also find interesting Casey Reas' [software {structures}](http://artport.whitney.org/commissions/softwarestructures/map.html) and 
+   You may also find interesting Casey Reas' [{Software} Structures](http://artport.whitney.org/commissions/softwarestructures/map.html).
 
 2. Continue working on the [in-class exericses from Wednesday's class](../README.md#week-4-wednesday-february-8-2017) and submit them in your [homework repository](http://github.com/zamfi/github-guide) (label these sketches `sketch-1.js` etc.).
 
