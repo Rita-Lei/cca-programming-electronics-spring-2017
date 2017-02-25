@@ -2,7 +2,7 @@
 
 Homework this week is to reproduce more of Sol LeWitt's pieces (by Sunday), and watch a video tutorial about arrays and do some practice exercises (by Tuesday).
 
-#### Programming Practice
+#### Programming Practice (due Sunday)
 
 Pick 3 **more** of Sol LeWitt's *Wall Drawings* from [this retrospective at MASS MoCA](http://massmoca.org/sol-lewitt/) and reproduce them using code, in p5.js. Label these in your [homework repository](http://github.com/zamfi/github-guide) according to their title in the restrospective, e.g., `lewitt-368.js`. Feel free to use the image as your guide or LeWitt's instructions directly. More info about [Sol LeWitt's instructions here](http://risdmuseum.org/manual/45_variations_of_a_drawing_sol_lewitt_and_his_written_instructions).
    
@@ -10,7 +10,7 @@ Get creative! Push yourself a little bit outside your comfort zone for this assi
    
 You may also find interesting Casey Reas' [{Software} Structures](http://artport.whitney.org/commissions/softwarestructures/map.html).
 
-#### Arrays
+#### Arrays (due Tuesday)
 
 We just scratched the surface of arrays in class.
 
