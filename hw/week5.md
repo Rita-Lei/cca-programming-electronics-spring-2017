@@ -2,7 +2,7 @@
 
 Homework this week is to reproduce some of Sol LeWitt's pieces, and then complete the assignments from last week (if you haven't already).
 
-1. Pick 3 of Sol LeWitt's Wall Drawings from [this retrospective at MASS MoCA](http://massmoca.org/sol-lewitt/) and reproduce them using code, in p5.js. Label these in your [homework repository](http://github.com/zamfi/github-guide) according to their title in the restrospective, e.g., `lewitt-368.js`. Feel free to use the image as your guide or LeWitt's instructions directly. More info about [Sol LeWitt's instructions here](http://risdmuseum.org/manual/45_variations_of_a_drawing_sol_lewitt_and_his_written_instructions).
+1. Pick 3 of Sol LeWitt's *Wall Drawings* from [this retrospective at MASS MoCA](http://massmoca.org/sol-lewitt/) and reproduce them using code, in p5.js. Label these in your [homework repository](http://github.com/zamfi/github-guide) according to their title in the restrospective, e.g., `lewitt-368.js`. Feel free to use the image as your guide or LeWitt's instructions directly. More info about [Sol LeWitt's instructions here](http://risdmuseum.org/manual/45_variations_of_a_drawing_sol_lewitt_and_his_written_instructions).
    
    Get creative! Use whatever code you're comfortable with. Bonus points for doing more than 3, or for animating them in some way.
    
@@ -26,7 +26,7 @@ As a reminder, **please email us if you get stuck!** We are on email more than i
 
 We (still) didn't get to this last week, so for next week, if you haven't already, please review:
 
-Watch Daniel Shiffman's tutorials about [JavaScript objects](https://www.youtube.com/watch?v=-e5h4IGKZRY&list=PLRqwX-V7Uu6Zy51Q-x9tMWIv9cueOFTFA&index=7) and functions -- [part 1](https://www.youtube.com/watch?v=wRHAitGzBrg&list=PLRqwX-V7Uu6Zy51Q-x9tMWIv9cueOFTFA&index=16), [part s](https://www.youtube.com/watch?v=zkc417YapfE&list=PLRqwX-V7Uu6Zy51Q-x9tMWIv9cueOFTFA&index=17), and [part 3](https://www.youtube.com/watch?v=qRnUBiTJ66Y&list=PLRqwX-V7Uu6Zy51Q-x9tMWIv9cueOFTFA&index=18).
+Watch Daniel Shiffman's tutorials about [JavaScript objects](https://www.youtube.com/watch?v=-e5h4IGKZRY&list=PLRqwX-V7Uu6Zy51Q-x9tMWIv9cueOFTFA&index=7) and functions -- [part 1](https://www.youtube.com/watch?v=wRHAitGzBrg&list=PLRqwX-V7Uu6Zy51Q-x9tMWIv9cueOFTFA&index=16), [part 2](https://www.youtube.com/watch?v=zkc417YapfE&list=PLRqwX-V7Uu6Zy51Q-x9tMWIv9cueOFTFA&index=17), and [part 3](https://www.youtube.com/watch?v=qRnUBiTJ66Y&list=PLRqwX-V7Uu6Zy51Q-x9tMWIv9cueOFTFA&index=18).
 
 Then, answer the following questions in a 'questions.md' file in your repository for week 3's homework:
 

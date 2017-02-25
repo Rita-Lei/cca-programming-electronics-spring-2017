@@ -266,3 +266,171 @@ Then, with a partner, try to recreate as many of the following sketches as you c
 Today we reviewed loops and together completed some in-class exercises.
 
 [Homework for Week 5](hw/week5.md)
+
+### Week 6: Wednesday, February 22, 2017
+
+Today we did reviewed homework, worked with objects, and started looking at arrays.
+
+
+#### Homework Review
+
+Share your Sol LeWitt pieces with a partner.
+
+#### Objects & Functions
+
+Objects are collections of properties. They can help to keep related variables together. For example:
+
+```javascript
+var circle = {
+	x: 100, 
+	y: 100,
+	vx: 3,
+	vy: 4,
+	r: 10
+};
+
+var circle2 = {
+	x: 120, 
+	y: 160,
+	vx: 3,
+	vy: 4,
+	r: 10
+};
+
+
+function setup() {
+	createCanvas(400, 400);
+}
+
+function draw() {
+  background(255);
+  
+	paint(circle);
+	paint(circle2);
+	
+	move(circle);
+	move(circle2);
+	
+	bounce(circle);
+	bounce(circle2);
+}
+
+function paint(circle) {
+	ellipse(circle.x, circle.y, circle.r*2, circle.r*2);
+}
+
+function move(circle) {
+	circle.x += circle.vx; // circle.x = circle.x + circle.vx
+	circle.y += circle.vy;
+}
+
+function bounce(circle) {
+	if (circle.x > width || circle.x < 0) {
+		circle.vx = - circle.vx;
+	}
+	if (circle.y > height || circle.y < 0) {
+		circle.vy = - circle.vy;
+	}
+}
+
+```
+
+This code creates two objects: `circle` and `circle2`. Each of the `paint`, `move`, and `bounce` functions is defined to act on a single obejct; calling `paint(circle)` makes the function act on the first `circle` object, while calling `paint(circle2)` makes the function act on the second `circle2` object.
+
+"Act on" means that the `circle` variable inside the function actually refers to one of the `circle` or `circle2` objects defined at the top of the code. Which one it refers to depends on whether it was called with `circle` or `circle2` as the parameter.
+
+**Exercise 1**: Add a third circle object.
+**Exercise 2**: Add a property to each circle that holds a color.
+**Exercise 2a**: Use that property in the `paint` function to draw each circle using its color property.
+
+Next, we modified the initial locations -- the `x` and `y` properties of `circle` and `circle2` so both circles start at the bottom of the canvas:
+
+```javascript
+var circle = {
+	x: 100, 
+	y: 400,
+	vx: 0,
+	vy: -4,
+	r: 10
+};
+
+var circle2 = {
+	x: 160, 
+	y: 400,
+	vx: 0,
+	vy: -4,
+	r: 10
+};
+```
+
+**Exercise 3**: Modify the `bounce` function so that, instead of bouncing, the two circles each reset to the bottom of the canvas when they reach the top.
+**Exercise 4**: Modify the `move` function so that the circles (now bubbles!) vibrate in the `x` direction each frame.
+**Exercise 5**: Add some interactivity -- use the `keyPressed` function to make the up (and down) arrow keys increase (and decrease) the rate at which the bubbles rise.
+
+Finally, we modified the code to use arrays instead of individual variables:
+
+```javascript
+var allCircles = [];
+
+function setup() {
+	createCanvas(400, 400);
+	for (var i = 0; i < 10; i += 1) {
+		var circle = {
+			x: random(0, 400),
+			y: 400,
+			vx: 0,
+			vy: random(-1, -10),
+			r: random(2, 20),
+			h: random(0, 360)
+		};
+		append(allCircles, circle);
+	}
+}
+
+function draw() {
+	background(255);
+	for (var i = 0; i < allCircles.length; i += 1) {
+		paint(allCircles[i]);
+		move(allCircles[i]);
+		bounce(allCircles[i]);
+	}
+}
+
+function mousePressed() {
+	var circle = {
+		x: mouseX,
+		y: mouseY,
+		vx: 0,
+		vy: -3,
+		r: 10,
+		h: random(0, 360)
+	};
+	append(allCircles, circle);
+}
+
+function paint(circle) {
+	colorMode(HSB);
+	fill(circle.h, 100, 100);
+	noStroke();
+	ellipse(circle.x, circle.y, circle.r*2, circle.r*2);
+}
+
+function move(circle) {
+	circle.x += circle.vx;
+	circle.y += circle.vy;
+}
+
+function bounce(circle) {
+	if (circle.y < 0) {
+		circle.y = height;
+	}
+}
+```
+
+This code above creates 10 circles and appends them to the `allCircles` array (aka "list") inside `setup()`. Clicking the mouse triggers the `mousePressed()` function, which adds another circle at the current mouse coordinates.
+
+Finally, the `draw()` function uses a loop to call `paint`, `move`, and `bounce` on each of the cirles in the `allCircles` array.
+
+This gives us the flexibility to add or remove circles using code, in response to user events, instead of needing to modify the code to add additional circles.
+
+[Homework for Week 6](hw/week6.md)
