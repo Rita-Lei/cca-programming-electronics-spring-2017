@@ -561,15 +561,15 @@ function setup() {
 
 function draw() {
   background(0);
-  var boundsHit = false;
+  var edgeHit = false;
   for (var i = 0; i < invaders.length; i += 1) {
     paintInvader(invaders[i]);
     moveInvader(invaders[i]);
-    if (checkInvaderBounds(invaders[i])) {
-      boundsHit = true;
+    if (invaderHitEdge(invaders[i])) {
+      edgeHit = true;
     }
   }
-  if (boundsHit) {
+  if (edgeHit) {
     invaderSpeed = constrain(
       invaderSpeed * -1.1, -maxInvaderSpeed, maxInvaderSpeed);
     for (var i = 0; i < invaders.length; i += 1) {
@@ -595,7 +595,7 @@ function moveInvader(invader) {
   invader.x += invaderSpeed;
 }
 
-function checkInvaderBounds(invader) {
+function invaderHitEdge(invader) {
   return invader.x <= 0 || invader.x + invader.w >= width;
 }
 
