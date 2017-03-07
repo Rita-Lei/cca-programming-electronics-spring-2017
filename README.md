@@ -434,3 +434,247 @@ Finally, the `draw()` function uses a loop to call `paint`, `move`, and `bounce`
 This gives us the flexibility to add or remove circles using code, in response to user events, instead of needing to modify the code to add additional circles.
 
 [Homework for Week 6](hw/week6.md)
+
+### Week 7: Wednesday, March 1, 2017
+
+In class today, we reviewed the homework, focusing on arrays and objects. We also discussed function "scoping", that is, what happens to the parameters when you call a function.
+
+They key insight is that, when you define a function, you name the parameters it receives. For example, take the following function:
+
+```javascript
+function paintCircle(x, y, r) { 
+  ellipse(x, y, r*2, r*2);
+}
+```
+
+The code above defines a function called `paintCircle` whose three parameters are named `x`, `y`, and `r`. The code inside the function uses those parameters by referring to the names `x`, `y`, and `r`.
+
+When your code then later **calls** the `paintCircle` function, it needs to give *values* for those parameters. For example, consider the following code:
+
+```javascript
+paintCircle(100, 120, 10);
+```
+
+This code calls the `paintCircle` function we defined above, with the parameters `100`, `120`, and `10`. That means that the code *inside* the `paintCircle` is run with the parameters `x`, `y`, and `r` referring to the values `100`, `120`, and `10`, respectively -- purely because of the order in which the paramater names and values appear. In other words, the function call above runs `paintCircle` with `x` equal to `100`, `y` equal to `120`, and `r` equal to `10`.
+
+The result is that `ellipse(x, y, r*2, r*2)` inside the `paintCircle` function becomes `ellipse(100, 120, 10*2, 10*2)`.
+
+If we called the `paintCircle` function with other values, those values would be used instead.
+
+Next, we discussed how to build the classic arcade hit [Space Invaders](https://www.google.com/search?q=space+invaders&client=safari&rls=en&tbm=isch&tbo=u&source=univ&sa=X&ved=0ahUKEwjzzf3Sq8HSAhVM6GMKHWmtALYQiR4Iew).
+
+We started with a list of way too many things, and ultimately shortened it to just a few pieces:
+
+#### Data
+- `x`, `y`, `speed` of invaders
+- `x`, `y`, `speed` of missiles
+- `x` for player
+
+#### Visual
+- Invaders
+- Player
+- Missiles
+- Background
+
+#### Functions
+- Player fires weapon
+- Player moves
+- Invaders move, with changing speed
+- Invaders get hit and die
+- Player gets hit and dies
+- Invader fires
+- Player wins
+- Invaders hit player
+
+We started to tackle this list with the following starter code: 
+
+```javascript
+var invaderSpeed = 5;
+var invaders = [
+	{ x: 30,
+	  y: 30,
+	  w: 10,
+	  h: 5
+	},
+	{ x: 25,
+	  y: 45,
+	  w: 9,
+		h: 5
+	},
+];
+var playerX = 200;
+
+function setup() { 
+  createCanvas(400, 400);
+} 
+
+function draw() { 
+  background(0);
+	for (var i = 0; i < invaders.length; i += 1) {
+		paintInvader(invaders[i]);
+	}
+	paintPlayer(playerX);
+}
+	
+function paintInvader(invader) {
+	rect(invader.x, invader.y, invader.w, invader.h);
+}
+
+function paintPlayer(position) {
+	triangle(position-10, height-20,
+					 position+10, height-20,
+					 position, height-60);
+}
+
+```
+
+In case you're curious, I've included below one approach to building Space Invaders. Note that there are quite a few functions, whose names should be relatively self-explanatory.
+
+It's a lot of code, and as a result challenging to fully understand -- but ultimately each function is quite short. It does most (but not all!) of the pieces we laid out initially.
+
+Enjoy!
+
+```javascript
+var invaderSpeed = 1;
+var maxInvaderSpeed = 10;
+var invaders = [];
+var missiles = [];
+
+var playerX = 200;
+
+var invadersPerRow = 10;
+var rowsOfInvaders = 4;
+
+function setup() {
+  createCanvas(400, 400);
+  for (var row = 0; row < rowsOfInvaders; row++) {
+    for (var invader = 0; invader < invadersPerRow; invader++) {
+      append(invaders, {
+        x: invader * (width * 0.8) / invadersPerRow,
+        y: 20 + row * 20,
+        w: width * 0.8 / invadersPerRow / 2,
+        h: 5
+      });
+    }
+  }
+}
+
+function draw() {
+  background(0);
+  var boundsHit = false;
+  for (var i = 0; i < invaders.length; i += 1) {
+    paintInvader(invaders[i]);
+    moveInvader(invaders[i]);
+    if (checkInvaderBounds(invaders[i])) {
+      boundsHit = true;
+    }
+  }
+  if (boundsHit) {
+    invaderSpeed = constrain(
+      invaderSpeed * -1.1, -maxInvaderSpeed, maxInvaderSpeed);
+    for (var i = 0; i < invaders.length; i += 1) {
+      invaders[i].y += 10;
+    }
+  }
+  for (var i = 0; i < missiles.length; i += 1) {
+    paintMissile(missiles[i]);
+    moveMissile(missiles[i]);
+  }
+  checkAllMissiles(invaders, missiles);
+  paintPlayer(playerX);
+  movePlayer();
+}
+
+function paintInvader(invader) {
+  stroke(255);
+  fill(255);
+  rect(invader.x, invader.y, invader.w, invader.h);
+}
+
+function moveInvader(invader) {
+  invader.x += invaderSpeed;
+}
+
+function checkInvaderBounds(invader) {
+  return invader.x <= 0 || invader.x + invader.w >= width;
+}
+
+function paintMissile(missile) {
+  stroke(255);
+  strokeWeight(2);
+  line(missile.x, missile.y, missile.x, missile.y - missile.length);
+}
+
+function moveMissile(missile) {
+  missile.y -= missile.vy;
+  if (missile.y < 0) {
+    removeArrayValues(missiles, [missile]);
+  }
+}
+
+function removeArrayValues(array, values) {
+  for (var i = 0; i < values.length; i += 1) {
+    // use the array.splice function to remove en entry at a given index
+    array.splice(array.indexOf(values[i]), 1);
+  }
+}
+
+function checkAllMissiles(invaders, missiles) {
+  var deadInvaders = [];
+  var deadMissiles = [];
+
+  // for each invader, check each missile to see if it collides
+  for (var i = 0; i < invaders.length; i += 1) {
+    for (var m = 0; m < missiles.length; m += 1) {
+      if (checkCollision(invaders[i], missiles[m])) {
+        append(deadInvaders, invaders[i]);
+        append(deadMissiles, missiles[m]);
+      }
+    }
+  }
+  
+  // actually remove those dead invaders and missiles
+  removeArrayValues(invaders, deadInvaders);
+  removeArrayValues(missiles, deadMissiles);
+}
+
+function checkCollision(invader, missile) {
+  return missile.x > invader.x &&
+    missile.x < invader.x + invader.w &&
+    !(missile.y - missile.length > invader.y ||
+      missile.y < invader.y - invader.h);
+}
+
+function paintPlayer(position) {
+  triangle(position - 10, height - 20,
+    position + 10, height - 20,
+    position, height - 60);
+}
+
+function movePlayer() {
+  if (keyIsDown(LEFT_ARROW)) {
+    playerX -= maxInvaderSpeed;
+  } else if (keyIsDown(RIGHT_ARROW)) {
+    playerX += maxInvaderSpeed;
+  }
+  playerX = constrain(playerX, 10, width-10);
+}
+
+function fireMissile(playerPosition) {
+  var missile = {
+    x: playerPosition,
+    y: height-60,
+    vy: 8,
+    length: 10
+  };
+  append(missiles, missile);
+}
+
+function keyPressed() {
+  if (keyCode == 32) {
+    fireMissile(playerX);
+  }
+}
+```
+
+No homework this week. Use the time to catch up on previous homework assignments if you weren't able to complete them!
