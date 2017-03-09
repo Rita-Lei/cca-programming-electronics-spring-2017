@@ -684,7 +684,7 @@ No homework this week. Use the time to catch up on previous homework assignments
 
 Lecture
 
-- We introduced Arduino.
+- We introduced Arduino. ([Lecture Slides here](img/arduino-slides.pdf).)
 
 - We installed the Arduino software and tested basic functionality using the blink example (File -> Examples -> Basics -> Blink).
 
