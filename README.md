@@ -678,3 +678,26 @@ function keyPressed() {
 ```
 
 No homework this week. Use the time to catch up on previous homework assignments if you weren't able to complete them!
+
+
+### Week 8: Wednesday, March 8, 2017
+
+Lecture
+
+- We introduced Arduino.
+
+- We installed the Arduino software and tested basic functionality using the blink example (File -> Examples -> Basics -> Blink).
+
+- We changed the value in the delay() function to change the blink rate.
+
+- We learned how the solderless breadboard works, and we used it to add an external LED.
+
+- Then we added an input -- a potentiometer, which lets us convert physical rotation of a knob into a value in code.
+
+- Then we modified the code to write that value to the serial monitor.
+
+- Next, we added a new type of output: the servo motor. And we looked at two examples: Knob (File -> Examples -> Servo -> Knob) and Sweep (File -> Examples -> Servo -> Sweep), focused on why the code is structured the way it is.
+
+- Finally, we added a new type of input: the Light-Dependent Resistor (LDR).
+
+[Homework for Week 8](hw/week8.md)
