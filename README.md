@@ -701,3 +701,15 @@ Lecture
 - Finally, we added a new type of input: the Light-Dependent Resistor (LDR).
 
 [Homework for Week 8](hw/week8.md)
+
+### Week 9: Wednesday, March 15, 2017
+
+Homework review.
+
+Lecture:
+
+- We looked at controlling DC motors using a transistor.
+
+- We learned about using analogWrite to control the speed of a transistor-controlled motor.
+
+[Homework for Week 9](hw/week9.md)
