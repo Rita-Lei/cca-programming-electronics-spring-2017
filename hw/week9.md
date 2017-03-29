@@ -22,7 +22,7 @@ sooner you send us your thoughts, the sooner we can provide you with feedback an
 
 Here are some notes:
 
-- Your project should have a significant programming component and electronic comonent.
+- Your project should have a significant programming component and electronic component.
 - It should have some kind of input: maybe a sensor or two, a remote control, a touch control, a computer input -- perhaps through P5?
 - It should have some kind of output: motors, LEDs, a P5 sketch on the web, sound, video playback, a graph of data, etc.
 - It should have an artistic component.
