@@ -16,7 +16,7 @@ Download, print out, and complete this [practice quiz](practice-quiz.pdf). Instr
 
 Your final project will take up the bulk of your classwork for the 2nd
 half of term. Think about what you'd like to do, and [send
-us](mailto:jzamfirescpereira@cca.edu,caroline.crandall@cca.edu) a 5-10 sentence
+us](mailto:jzamfirescupereira@cca.edu,caroline.crandall@cca.edu) a 5-10 sentence
 description of what you'd like to do by **Sunday night, March 26**. The
 sooner you send us your thoughts, the sooner we can provide you with feedback and you can iterate. We'll probably go through a revision or two before you have a final idea to implement.
 
