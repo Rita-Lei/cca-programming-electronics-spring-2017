@@ -713,3 +713,9 @@ Lecture:
 - We learned about using analogWrite to control the speed of a transistor-controlled motor.
 
 [Homework for Week 9](hw/week9.md)
+
+### Week 10: Wednesday, March 29, 2017
+
+Practice quiz review; project discussions.
+
+[Homework for Week 10](hw/week10.md)
